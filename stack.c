@@ -63,6 +63,7 @@ int main() {
         printf("Popping: ");
         char* str = *(char**)StackPop(&stringStack);
         printf("Popped: %s\n", str);
+        free(str);
     }
     printf("\n");
     StackDispose(&stringStack);
